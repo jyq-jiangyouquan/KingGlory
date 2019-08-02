@@ -2,52 +2,60 @@
     <div class="header">
        <div>
            <div class="mytop"></div>
-           <div>
-               <img src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20190717/830511120753857.jpg" />
-           </div>
            <div class="my-navigation">
                <div class="myleft"></div>
                <div>
                   <a href="">
-                     <h2>官网首页</h2>HOME    
+                     <h2>官网首页</h2> 
+                     <p>HOME</p>  
                   </a> 
                </div>
                <div>
                    <a href="">
-                     <h2>游戏资料</h2>DATA    
+                     <h2>游戏资料</h2>
+                     <p>DATA</p>   
                   </a>
                </div>
                <div>
                    <a href="">
-                     <h2>内容中心页</h2>CONTENTS    
+                     <h2>内容中心页</h2>
+                     <p>CONTENTS</p>    
                   </a>
                </div>
                <div>
                    <a href="">
-                     <h2>赛事中心</h2>MATCH   
+                     <h2>赛事中心</h2> 
+                     <p>MATCH</p>
                   </a>
                </div>
                <div>
                    <a href="">
-                     <h2>百态王者</h2>CULTURE    
+                     <h2>百态王者</h2>
+                     <p>CULTURE</p>    
                   </a>
                </div>
                <div>
                    <a href="">
-                     <h2>社区互动</h2>COMMUNTY    
+                     <h2>社区互动</h2>    
+                     <p>COMMUNTY</p>
                   </a>
                </div>
                <div>
                    <a href="">
-                     <h2>玩家支持</h2>PLAYER   
+                     <h2>玩家支持</h2>
+                     <p>PLAYER</p>   
                   </a>
                </div> 
                <div>
                    <a href="">
-                     <h2>欢迎登录</h2>HOME    
+                     <h2>欢迎登录</h2> 
+                     <p>HOME</p>   
                    </a>
                </div>
                <div class="myleft"></div>
+           </div>
+            <div class="my_img">
+               <img src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20190717/830511120753857.jpg" />
            </div>
        </div>    
     </div>
@@ -58,23 +66,30 @@ export default {
 }
 </script>
 <style>
-h2{margin: 0;}
-  .header>div>div img{
-      width: 100%;
+
+a{text-decoration:none; color: rgb(192, 192, 192);}
+ .my_img img{
+     width: 100%;
       float: left;
+
   }
   .mytop{
       height: 60px;
   }
   .my-navigation{
-      width: 100%;
-      height: 105px;
+      clear: both;
       background-color:rgba(0, 0, 0, 0.85);
-      position: relative;
+      
   }
    .my-navigation>div{
-      padding: 15px;
-      display:inline-flex;
+      display:inline-flex; 
+      padding:0 40px 0;
+      
+  }
+  .my-navigation>div>a p{
+      width: 100px;
+    text-align:center;  
+    color:rgb(117, 117, 117);  
   }
   .my-navigation .myleft{
       width: 10%;
