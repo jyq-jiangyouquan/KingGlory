@@ -2,6 +2,9 @@
     <div class="header">
        <div>
            <div class="mytop"></div>
+           <div class="my_img">
+                  <img src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20190717/830511120753857.jpg" />
+            </div> 
            <div class="my-navigation">
                <div class="myleft"></div>
                <div>
@@ -54,12 +57,11 @@
                </div>
                <div class="myleft"></div>
            </div>
-            <div class="my_img">
-               <img src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20190717/830511120753857.jpg" />
-           </div>
+           
        </div>    
     </div>
 </template>
+
 <script>
 export default {
     
@@ -67,30 +69,34 @@ export default {
 </script>
 <style>
 
-a{text-decoration:none; color: rgb(192, 192, 192);}
+a{text-decoration:none}
+/* 首页背景图片 样式 */
  .my_img img{
-     width: 100%;
-      float: left;
-
-  }
+   position:absolute;
+    width: 100%;
+ }
+ /* 首页导航上部 空白区域 */
   .mytop{
       height: 60px;
   }
+  /* 导航条 */
   .my-navigation{
-      clear: both;
-      background-color:rgba(0, 0, 0, 0.85);
-      
+      position:absolute;
+      background-color:rgba(30, 28, 31, 0.9); 
+      width: 100%;  
   }
    .my-navigation>div{
       display:inline-flex; 
-      padding:0 40px 0;
-      
+      padding:0 40px 0px;    
   }
+  /* 导航 字体样式 */
   .my-navigation>div>a p{
-      width: 100px;
     text-align:center;  
     color:rgb(117, 117, 117);  
   }
+   .my-navigation>div>a{
+       color: #bdbdbd
+   }
   .my-navigation .myleft{
       width: 10%;
   }

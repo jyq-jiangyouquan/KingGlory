@@ -3,7 +3,6 @@
     <router-view></router-view>
  </div>
 </template>
-
 <style>
    .app-container{
      padding-top:0px;

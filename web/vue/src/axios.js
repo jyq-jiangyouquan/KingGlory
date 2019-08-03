@@ -1,4 +1,4 @@
-//vue_app_oo /src/axios.js
+//vue/src/axios.js
 //将引入axios库单独保存一个文件中，
 //减少main.js代码量 
 //1：引入vue实例
@@ -8,7 +8,7 @@ import axios from "axios"
 //3：发送请求时保存session信息
 axios.defaults.withCredentials=true
 //4：设置请求基础路径
-axios.defaults.baseURL="http://127.0.0.1:3000/"
+axios.defaults.baseURL="http://127.0.0.1:8080/"
 //5：将axios注册vue实例
 Vue.prototype.axios = axios 
-//6：将main.js 引入axios.js 文件
+//6：在将main.js 引入axios.js 文件
