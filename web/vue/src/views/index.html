@@ -5,20 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="/web/vue/src/js/vue.js"></script>
-    <script src="/web/vue/src/components/todoHead.js"></script>
-   <link rel="stylesheet" href="/web/vue/src/components/HelloWorld.vue">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>  
 </head>
 <body>
-     <div id="app">
-        <todo-head></todo-head>
-     
+     <div class="">
+         <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+               <div class="row">
+                  <!-- 轮播图 -->
+                   <div class="col-7 mysff_ul" style="background:yellow">
+                      <ul>
+                         <li><a href="#">久诚登录大神问答</a></li>
+                         <li><a href="#">集卡回城特效</a></li>
+                         <li><a href="#">会师深圳总决赛</a></li>
+                         <li><a href="#">久胜战神挑战赛</a></li>
+                         <li><a href="#">总决赛看点揭秘</a></li>
+                      </ul>
+                  </div>
+                   <!-- 轮播图 右侧 导航详情-->
+                   <div class="col-3">
+                      <ul class="nav nav-pills">
+                         <li class="nav-item">
+                            <a class="nav-link  active" data-toggle="pill" href="#pill1">热门</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pill2">新闻</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pill3">公告</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pill4">活动</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pill5">赛事</a>
+                        </li>
+                         <li>
+                            <a href="#">...</a>
+                        </li>
+                      </ul>
+                     <!-- 轮播图 右侧 导航下部详情-->
+                      <div class="tab-content">
+                           <div id="pill1" class="tab-pane active">
+                               <h5>8月6日全服不停机更新公告</h5>
+                               <ul>
+                                  <li>
+                                     <a href="#">峡谷喜迎七夕节 大波福利来袭</a>
+                                 </li>
+                                  <li>
+                                     <a href="">《王者荣耀》公布 “天工”编辑器，即将上...</a>
+                                 </li>
+                                  <li>
+                                     <a href="">王者时刻功能无法使用异常说明 </a></li>
+                                  <li>
+                                     <a href="">Hero久诚在线解析干将莫邪玩法 </a></li>
+                                  <li>
+                                     <a href="">8月2日体验服停机更新公告</a></li>
+                                  <li>
+                                     <a href=""> 体验服【资格申请活动】即将开启</a></li>
+                                  <li>
+                                     <a href="">新英雄马超、ChinaJoy峡谷开放日...本文信</a> </li>
+                               </ul>
+                          
+                           </div>
+                           <div id="pill2" class="tab-pane">
+                              <h5>Hero久诚在线解析干将莫邪玩法</h5>
+                              <ul>
+                                 <li>
+                                    <a href="#">2019Chinajoy王者PK赛，十大明星主播巅峰对决</a>
+                                 </li>
+                                 <li>
+                                    <a href="">王者荣耀》公布 “天工”编辑器，即将上线王者模拟战</a>
+                                   </li>
+                                 <li>
+                                    <a href="">《圣斗士星矢（腾讯）》周年庆重磅上线！巅峰赛事爆燃开启</a></li>
+                                 <li>
+                                    <a href="">新英雄马超、ChinaJoy峡谷开放日...本文信息量有点大！ </a></li>
+                                 <li>
+                                    <a href="">传说级FMVP皮肤曝光！将军与公主，王者峡谷年度情感大戏上演~</a></li>
+                                 <li>
+                                    <a href="">狄某有话说 | 如何拥有好队友，快来get匹配新姿势！</a></li>
+                                 <li>
+                                    <a href="">体验服爆料 | 不想匹配那个Ta，我有一个小...</a> </li>
+                              </ul>   
+                           </div>
+                           <div id="pill3" class="tab-pane">
+                              <h5> 8月6日全服不停机更新公告</h5>
+                              <ul>
+                                 <li>
+                                    <a href="#">王者时刻功能无法使用异常说明</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">8月2日体验服停机更新公告</a>
+                                   </li>
+                                 <li>
+                                    <a href="#">体验服【资格申请活动】即将开启</a></li>
+                                 <li>
+                                    <a href="#">7月31日体验服停机更新公告 </a></li>
+                                 <li>
+                                    <a href="#"> 8月1日体验服停机更新公告</a></li>
+                                 <li>
+                                    <a href="#">8月1日体验服停机更新公告</a></li>
+                                 <li>
+                                    <a href="#"> 净化游戏环境声明及处罚公告（7月24日-7月29日）</a> </li>
+                              </ul>   
+                           </div>                    
+                           <div id="pill4" class="tab-pane">
+                              <h5> 峡谷喜迎七夕节 大波福利来袭</h5>
+                              <ul>
+                                 <li>
+                                    <a href="#">世界冠军杯 集卡赢壕礼活动公告</a> </li>
+                                 <li>
+                                    <a href="#">炎炎夏日全新活动周 峡谷激战得好礼</a>
+                                 </li>
+                                 <li>
+                                    <a href="">助力世冠赛 心愿单升级回馈公告</a>
+                                   </li>
+                                 <li>
+                                    <a href="">夏日福利继续领 限定皮肤返场</a></li>
+                                 <li>
+                                    <a href="">【稷下的神秘档案】活动公告 </a></li>
+                                 <li>
+                                    <a href="">当代“英雄”生存现状解析，你差的就只是一件“神装”！</a></li>
+                                 <li>
+                                    <a href="">夏日盛典明日开启 惊喜福利拿到手软</a></li>
+                              </ul> 
+                           </div>
+                           <div id="pill5" class="tab-pane">
+                              <h5>  世冠总决赛看点揭秘，多重观...</h5>
+                              <ul>
+                                 <li>
+                                    <a href="#"> 你是赛评师：eStarPro强势进军世冠总决赛，深圳遭遇RW胜率有多少？</a> </li>
+                                 <li>
+                                    <a href="#">【世冠今日预报】eStarPro vs RNG.M，宿敌与命运</a>
+                                 </li>
+                                 <li>
+                                    <a href="">第二周五省齐开战，王者荣耀城市赛省赛进行中！</a>
+                                   </li>
+                                 <li>
+                                    <a href="">世冠四强出炉 8月2日半决赛拉开战幕</a></li>
+                                 <li>
+                                    <a href=""> 世冠总决赛门票已售罄，8月10日不见不散，感恩有你</a></li>
+                                 <li>
+                                    <a href=""> 世冠总决赛落地深圳大运，多重福利邀你8月10日现场观赛！</a></li>
+                                 <li>
+                                    <a href="">虎牙明星大腿杯S2赛季全新升级，争锋相对谁能脱颖而出成为最强大腿</a></li>
+                              </ul> 
+                           </div>
+                      </div>
+                   </div>
+                   <div class="col-2" style="background:rgb(43, 27, 27)">123</div>
+               </div>
+            </div>
+            <div class="col-2"></div>
+         </div>
      </div>
-     <script>
-        new Vue({
-            el:"#app",
-            data:{}
-        })
-     </script>
 </body>
 </html>

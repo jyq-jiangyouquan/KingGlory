@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+   <div class="header">
        <div>
            <div class="mytop"></div>
            <div class="my_img">
@@ -74,7 +74,7 @@ a{text-decoration:none}
  .my_img img{
    position:absolute;
     width: 100%;
- }
+ } 
  /* 首页导航上部 空白区域 */
   .mytop{
       height: 60px;
@@ -84,6 +84,7 @@ a{text-decoration:none}
       position:absolute;
       background-color:rgba(30, 28, 31, 0.9); 
       width: 100%;  
+     
   }
    .my-navigation>div{
       display:inline-flex; 

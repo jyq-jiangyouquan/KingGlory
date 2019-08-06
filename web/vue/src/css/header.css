@@ -1,0 +1,60 @@
+
+a{text-decoration:none}
+/* 首页背景图片 样式 */
+ .my_img img{
+   position:absolute;
+    width: 100%;
+ } 
+ /* 首页导航上部 空白区域 */
+  .mytop{
+      height: 60px;
+  }
+  /* 导航条 */
+  .my-navigation{
+      position:absolute;
+      background-color:rgba(30, 28, 31, 0.9); 
+      width: 100%; 
+  }
+   .my-navigation>div{
+      display:inline-flex;  
+      border-bottom: 6px solid rgba(30, 28, 31, 0.08); 
+  }
+  /* 导航 字体样式 */
+  .my-navigation>div>a{
+    padding:0 40px 0px;    
+  }
+  .my-navigation>div>a p{
+    text-align:center;  
+    color:rgb(117, 117, 117); 
+  }
+   .my-navigation>div>a,.my_ul ul>li>a{
+       color: #d6d6d6
+   }
+  .my-navigation .myleft{
+      width: 10%;
+  }
+/* 导航条 隐藏区域 */
+  .my_ul{
+    background-color:rgba(30, 28, 31, 0.9); 
+    position:absolute;
+    display: block;
+    display:inline-flex;
+    width: 100%;
+    margin-top: 112px;
+    padding-left:440px;
+    visibility:hidden;
+  }
+  .my_ul>ul li{
+    list-style: none;
+    padding-left: 60px;
+    font-size: 20px;
+  }
+  /* 导航条 鼠标悬停样式 */
+  .my-navigation>div:hover{
+      background-image:linear-gradient(rgba(0, 0, 0, 0.08) ,rgba(225, 225, 0, 0.15) );
+      border-bottom: 6px solid rgb(255, 230, 0)
+  }
+  .my-navigation>div>a:hover{
+      color:rgba(255, 230, 0, 0.521)
+  }
+
