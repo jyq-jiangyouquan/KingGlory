@@ -1,7 +1,5 @@
 body{margin: 0;padding: 0; }
 
-
-
 /* 轮播图 下部文字部分 */
 div.col-7{margin: 0;padding: 0}
 .mysff_ul ul{
@@ -14,13 +12,16 @@ div.col-7{margin: 0;padding: 0}
      margin: 0px;
 }
 .mysff_ul>ul li{
-   padding:15px 27px 15px; 
+   padding:15px 26px 15px; 
    font-size: 19px;  
    color: rgb(153, 152, 152) !important; 
 }
 /* 鼠标悬停状态 */
-.mysff_ul>ul li:hover{
-     background-color:rgba(196, 195, 195,0.2) 
+.mysff_ul>ul li:hover {
+     background-color:rgba(196, 195, 195,0.2) ;
+}
+.mysff_ul>ul>li>a:hover{
+     color:rgba(255, 230, 0, 0.521)  
 }
 
 /*轮播图右侧 导航栏 导航 */

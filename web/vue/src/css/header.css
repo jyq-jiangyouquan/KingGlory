@@ -35,26 +35,40 @@ a{text-decoration:none}
   }
 /* 导航条 隐藏区域 */
   .my_ul{
-    background-color:rgba(30, 28, 31, 0.9); 
     position:absolute;
-    display: block;
+    background-color:rgba(30, 28, 31, 0.9); 
     display:inline-flex;
+    margin-top: 118px;
     width: 100%;
-    margin-top: 112px;
-    padding-left:440px;
-    visibility:hidden;
+    padding-left:450px;
+    padding-bottom: 50px; 
+    display: none;
+    border-top:1px solid #000; 
   }
   .my_ul>ul li{
     list-style: none;
-    padding-left: 60px;
+    padding-left: 50px;
     font-size: 20px;
+    margin:10px;
+
   }
   /* 导航条 鼠标悬停样式 */
-  .my-navigation>div:hover{
+  .my-navigation>.d1:hover{
       background-image:linear-gradient(rgba(0, 0, 0, 0.08) ,rgba(225, 225, 0, 0.15) );
       border-bottom: 6px solid rgb(255, 230, 0)
   }
-  .my-navigation>div>a:hover{
+  .my-navigation>div a:hover{
       color:rgba(255, 230, 0, 0.521)
   }
-
+  .my-navigation:hover +.my_ul{
+    display: block;
+    display:inline-flex;
+  }
+  /* 鼠标悬停隐藏部分 样式 */
+  .my_ul:hover{
+      display: block;
+      display:inline-flex;   
+  }
+  .my_ul>ul>li :hover{
+    color:rgba(255, 230, 0, 0.521) 
+}
