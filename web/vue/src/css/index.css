@@ -1,19 +1,20 @@
-body{margin: 0;padding: 0; }
+div .row,div .col-7,body{margin: 0;padding: 0; }
 
 /* 轮播图 下部文字部分 */
-div.col-7{margin: 0;padding: 0}
-.mysff_ul ul{
+.mysff_ul{
      width: 100%;
-     background-color:rgba(30, 28, 31, 0.9);  
+     background-color:rgba(30, 28, 31, 0.9);
+     position:absolute; bottom:0;
+ }
+.mysff_ul ul{  
      display:inline-flex;
      list-style: none;
-     padding-left:0;
-     position:absolute;bottom:0px;
-     margin: 0px;
+     padding: 0;
+     margin: 0;
 }
 .mysff_ul>ul li{
-   padding:15px 26px 15px; 
-   font-size: 19px;  
+   padding:18px 29px 18px 38px; 
+   font-size: 16px;  
    color: rgb(153, 152, 152) !important; 
 }
 /* 鼠标悬停状态 */
@@ -38,10 +39,9 @@ div.col-7{margin: 0;padding: 0}
 }
 
 /* 清除col-3 边距 */
-div .col-3{ margin: 0%;padding: 0}
+div .col-3{ margin: 0;padding: 0}
 /* 轮播图块 高度 */
 .tab-pane{height: 350px;}
-   
     h5{
       color: rgba(255, 230, 0, 0.521) !important;
       background-color:rgba(30, 28, 31, 0.9);
@@ -60,3 +60,45 @@ div .col-3{ margin: 0%;padding: 0}
     .tab-pane>ul>li a{
      color:rgb(153, 152, 152); 
    }
+
+   /* 轮播图 最右侧 */
+  div .col-2{ margin: 0;padding: 0}
+   .download{
+     background-color:rgba(30, 28, 31, 0.9); 
+     border-left: 1px solid #000;
+   }
+   /*轮播图 最右侧  下载游戏图片 */
+   .download>a img{
+        width: 100%;
+     border: 1px solid #000;
+   }
+   .download_img>a{
+        display: inline-flex;
+        padding:50px 10px 48px 40px;
+        color: #ffffff;
+        font-size: 20px;
+   }
+   .download_img>a img{
+       width: 15%;
+       height: 15%;
+   }
+   .download_img>.a1 img{
+     margin-left: 40px;
+   }
+   .download_img>a:first-child{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39) !important;
+   }
+/*  */
+.picture_img{
+     display: inline-flex;
+}
+.picture_img div:last-child{
+     margin: 0px;
+     padding-right: 0px;
+
+}
+.picture_img>div>a img{
+     width: 99%;
+
+     
+}
