@@ -13,35 +13,27 @@ div .row,div .col-7,body{margin: 0;padding: 0; }
      margin: 0;
 }
 .mysff_ul>ul li{
-   padding:18px 29px 18px 38px; 
-   font-size: 16px;  
+   padding:18px 30px 18px 40px; 
+   font-size: 15px;  
    color: rgb(153, 152, 152) !important; 
 }
 /* 鼠标悬停状态 */
-.mysff_ul>ul li:hover {
-     background-color:rgba(196, 195, 195,0.2) ;
-}
-.mysff_ul>ul>li>a:hover{
-     color:rgba(255, 230, 0, 0.521)  
-}
+.mysff_ul>ul li:hover {  background-color:rgba(196, 195, 195,0.2) ;}
+.mysff_ul>ul>li>a:hover{  color:rgba(255, 230, 0, 0.521)  }
 
 /*轮播图右侧 导航栏 导航 */
-.tab-content,.nav-pills{
-     background-color:rgba(30, 28, 31, 0.9); 
-}
+.tab-content,.nav-pills{  background-color:rgba(30, 28, 31, 0.9); }
 .nav-pills{
      padding: 10px;
      padding-left: 20px !important;
      border-bottom: 1px solid #000;
 }
-.nav-pills>li a,.mysff_ul>ul>li a{
-   color:rgb(153, 152, 152) !important; 
-}
+.nav-pills>li a,.mysff_ul>ul>li a{ color:rgb(153, 152, 152) !important; }
 
 /* 清除col-3 边距 */
 div .col-3{ margin: 0;padding: 0}
 /* 轮播图块 高度 */
-.tab-pane{height: 350px;}
+.tab-pane{ height: 350px ;}
     h5{
       color: rgba(255, 230, 0, 0.521) !important;
       background-color:rgba(30, 28, 31, 0.9);
@@ -57,9 +49,7 @@ div .col-3{ margin: 0;padding: 0}
      -o-text-overflow:ellipsis; 
      overflow: hidden; 
     }
-    .tab-pane>ul>li a{
-     color:rgb(153, 152, 152); 
-   }
+    .tab-pane>ul>li a{ color:rgb(153, 152, 152);  }
 
    /* 轮播图 最右侧 */
   div .col-2{ margin: 0;padding: 0}
@@ -82,23 +72,68 @@ div .col-3{ margin: 0;padding: 0}
        width: 15%;
        height: 15%;
    }
-   .download_img>.a1 img{
-     margin-left: 40px;
-   }
-   .download_img>a:first-child{
-        border-bottom: 1px solid rgba(0, 0, 0, 0.39) !important;
-   }
-/*  */
+   .download_img>.a1 img{ margin-left: 40px; }
+   .download_img>a:first-child{  border-bottom: 1px solid rgba(0, 0, 0, 0.39) !important; }
+
+/* 轮播图 下部一排图片 */
 .picture_img{
+     display: flex;
+     justify-content:space-between;
+}
+.picture_img div{ 
+   
+   flex-wrap:nowrap !important;
+   overflow:hidden;
+   width: 370px;
+   height: 170px;
+   margin-top: 30px; 
+  margin-right: 20px;
+}
+.picture_img div:first-child{ padding-left: 0px;}
+.picture_img div:last-child{ margin-right: 0px !important; }
+.picture_img>div>a>img{
+     width: 100%; 
+     cursor: pointer;
+	transition: all 0.6s; 
+}
+#img:hover{  transform: scale(1.1); }
+/* 内容中心 */
+div.col-9{ margin: 0;padding: 0; }
+.my_count{
+   display:flex;
+   align-items:center;
+}
+.count,.my_counts{
+     display:flex;
+     align-items:center;
+     justify-content:space-between;/*弹性布局 两端对齐*/
+     margin-top: 30px;
+}
+.my_counts{
+     margin-left: 30px;
+     margin-top:25px;
+}
+/* 内容中心下方 按钮组 */
+.but1,.but2{
      display: inline-flex;
+     flex-wrap:nowrap;
 }
-.picture_img div:last-child{
-     margin: 0px;
-     padding-right: 0px;
+.but1>a{
+  margin-top: 24px;
+  width: 390px;
+  background-color:#eeeeee;
+}
+.but2>a{
+     margin-top: 14px;
+     width: 120px;
+     background-color:#eeeeee;
+}
 
-}
-.picture_img>div>a img{
-     width: 99%;
+.but2{  margin-left: 30px;}
+/* 鼠标悬停 按钮样式 */
+.but1 a:hover,.but2 a:hover{ border-bottom: 5px solid rgb(228, 228, 0); }
 
-     
-}
+
+
+
+
