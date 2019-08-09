@@ -81,7 +81,6 @@ div .col-3{ margin: 0;padding: 0}
      justify-content:space-between;
 }
 .picture_img div{ 
-   
    flex-wrap:nowrap !important;
    overflow:hidden;
    width: 370px;
@@ -117,23 +116,67 @@ div.col-9{ margin: 0;padding: 0; }
 .but1,.but2{
      display: inline-flex;
      flex-wrap:nowrap;
+    
 }
 .but1>a{
   margin-top: 24px;
   width: 390px;
   background-color:#eeeeee;
+  padding-bottom: 10px;
+  border-bottom:3px solid #fff;
 }
 .but2>a{
      margin-top: 14px;
      width: 120px;
      background-color:#eeeeee;
+     border-bottom:3px solid #fff;
 }
 
 .but2{  margin-left: 30px;}
 /* 鼠标悬停 按钮样式 */
-.but1 a:hover,.but2 a:hover{ border-bottom: 5px solid rgb(228, 228, 0); }
+.but1 a:hover,.but2 a:hover{ border-bottom: 3px solid  #F3C258; }
+
+
+/*  */
+.my_but1>ul>li a{ background-color:#eeeeee; padding:5px 15px 5px 15px;  }
+.my_but1 ul{ 
+     padding-left: 0px;
+     display: flex;
+     list-style:none; 
+     margin-top: 20px;
+}
+.my_but1>ul li{   padding-right: 30px;  }
+.my_but1>ul>li a{  border-radius:10px !important;}
+.my_but1>ul>li a:hover{
+     background-color: #F3C258;
+}
+.but1>a:hover +.my_but1{
+     display: block;
+}
 
 
 
+/* 内容中心具体 详情 默认显示*/
+/*  */
+.container{ 
+     position: relative; 
+     background-image: url(../assets/content_imgs/01.jpg);background-size:contain;
+     background-repeat:no-repeat;
+     height:178px;
+}
+
+#ctrl{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;/*图片120*/
+    margin-left: -30px;
+}
+/* 播放按钮 图片 */
+#ctrl img{
+    width: 60px;
+    height: 60px;
+}
+.p1{ margin-top: 30px; }
 
 

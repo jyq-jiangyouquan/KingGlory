@@ -205,9 +205,10 @@
                               <a href="#" class="btn btn-light">赛事精品</a>
                               <a href="#" class="btn btn-light">英雄攻略</a>
                         </div>
-                        <div>
+                        <!--内容中心 下方隐藏组  -->
+                        <div class="my_but1">
                            <ul>
-                              <li><a href="#" class="btn btn-light">最新</a></li>
+                              <li><a href="#" class="btn btn-light ">最新</a></li>
                               <li><a href="#" class="btn btn-light">百星王者带你飞</a></li>
                               <li><a href="#" class="btn btn-light">峡谷情报局</a></li>
                               <li><a href="#" class="btn btn-light">零度王者视角</a></li>
@@ -215,13 +216,30 @@
                               <li><a href="#" class="btn btn-light">王者克制论</a></li>
                               <li><a href="#" class="btn btn-light">上分拍档</a></li>
                            </ul>
-
                         </div>
-
-
-
-
-
+                        <div class="row">
+                            
+                            <div class="container col-3">
+                                 <video src="../assets/bg.mp3" id="v3" ></video>
+                                 <a href="#" id="ctrl"><img src="../assets/暂停.png" alt=""></a>
+                                 <p class="p1">【王者炸麦了3】世冠淘汰赛名场面 RW天秀曜、RNG.M极限翻盘</p>
+                            </div>
+                            <div class=" container col-3" >
+                                    <video src="../assets/bg.mp3" id="v3" ></video>
+                                    <a href="#" id="ctrl"><img src="../assets/暂停.png" alt=""></a>
+                                    <p class="p1">【王者炸麦了3】世冠淘汰赛名场面 RW天秀曜、RNG.M极限翻盘</p>
+                            </div>
+                            <div class=" container col-3">
+                                    <video src="../assets/bg.mp3" id="v3" ></video>
+                                    <a href="#" id="ctrl"><img src="../assets/暂停.png" alt=""></a>
+                                    <p class="p1">【王者炸麦了3】世冠淘汰赛名场面 RW天秀曜、RNG.M极限翻盘</p>
+                            </div>
+                            <div class="container col-3">
+                                    <video src="../assets/bg.mp3" id="v3" ></video>
+                                    <a href="#" id="ctrl"><img src="../assets/暂停.png" alt=""></a>
+                                    <p class="p1">【王者炸麦了3】世冠淘汰赛名场面 RW天秀曜、RNG.M极限翻盘</p>
+                            </div>
+                        </div>
 
 
 
@@ -254,6 +272,21 @@
          </div>
      </div>
      <script src="../jquery-1.11.3.js"></script>
-   
+     <!-- 内容中心新的 播放详情 可播放的 -->
+     <script>
+         var ctrl=document.getElementById("ctrl");
+         var v3=document.getElementById("v3"); 
+         var img=document.querySelector("#ctrl img"); //图片
+          ctrl.onclick=function(e){
+             e.preventDefault();
+             if(v3.paused){
+                 img.src="../assets/暂停.png";       
+                 v3.play();
+             }else{
+                 img.src="../assets/播放.png";
+                 v3.pause();
+              }
+             }
+      </script>
 </body>
 </html>
