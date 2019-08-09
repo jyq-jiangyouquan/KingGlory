@@ -120,14 +120,14 @@ div.col-9{ margin: 0;padding: 0; }
 }
 .but1>a{
   margin-top: 24px;
-  width: 390px;
+  width: 383px;
   background-color:#eeeeee;
   padding-bottom: 10px;
   border-bottom:3px solid #fff;
 }
 .but2>a{
      margin-top: 14px;
-     width: 120px;
+     width: 118px;
      background-color:#eeeeee;
      border-bottom:3px solid #fff;
 }
@@ -137,7 +137,7 @@ div.col-9{ margin: 0;padding: 0; }
 .but1 a:hover,.but2 a:hover{ border-bottom: 3px solid  #F3C258; }
 
 
-/*  */
+/*内容中心具体 按钮详情 默认显示  */
 .my_but1>ul>li a{ background-color:#eeeeee; padding:5px 15px 5px 15px;  }
 .my_but1 ul{ 
      padding-left: 0px;
@@ -156,20 +156,34 @@ div.col-9{ margin: 0;padding: 0; }
 
 
 
-/* 内容中心具体 详情 默认显示*/
+/* 内容中心具体 图片详情 默认显示*/
 /*  */
-.container{ 
+div.container{
+     display: flex;
+     justify-content:space-between;  
+     padding-left: 0px;
+     padding-right: 0px;
+}
+div.container div{ 
+     flex-wrap:nowrap !important;
+     overflow:hidden;
+    margin-right: 40px;
+  }
+  .container div:first-child{ padding-left: 0px;}
+  div.container div:last-child{ margin-right: 0px !important; }
+
+
+/* 内容 下方 图片组 */
+.background_img{ 
      position: relative; 
      background-image: url(../assets/content_imgs/01.jpg);background-size:contain;
      background-repeat:no-repeat;
-     height:178px;
 }
-
 #ctrl{
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -50px;/*图片120*/
+    margin-top: -50px;
     margin-left: -30px;
 }
 /* 播放按钮 图片 */
@@ -177,6 +191,51 @@ div.col-9{ margin: 0;padding: 0; }
     width: 60px;
     height: 60px;
 }
-.p1{ margin-top: 30px; }
+.p1{ margin-top: 10px;  color: #6d6d6d; }
 
 
+/*英雄/皮肤 下方图片组  默认显示*/
+div .right_img{
+   border: 1px solid #e5e5e5;
+   margin-top: 25px;
+   margin-left: 30px;
+   display: none /*隐藏*/
+}
+div .right_img h2{margin-left: 15px;}
+div .right_img p{  color: #c5c4c4; margin-left: 12px;}
+div .right_img>a img{
+     width: 100%;
+}
+div.button_img ul{
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     margin-left: -10px;
+     margin-top: 20px;
+     display: none;/*隐藏*/
+}
+div.button_img>ul>li>a img{
+     height: 200px;
+}
+/* 第三个按钮 下显示 图片组 */
+.right_mia_img div{
+     margin-top: 25px;
+     margin-left: 30px;
+     display: flex;
+     justify-content: space-between;
+
+}
+.right_mia_img>div>a img{
+     height: 234px; 
+     width: 85px;; 
+}
+
+
+/* Kcc 赛程 */
+.bg{ margin-top:45px; }
+.ticket{
+     border: 1px solid #F3C258;
+     border-radius:5px; 
+     padding-left: 6px;
+     padding-right: 6px;
+}
