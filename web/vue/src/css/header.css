@@ -19,8 +19,11 @@ a{text-decoration:none}
       position:absolute;
       background-color:rgba(30, 28, 31, 0.9); 
       width: 100%; 
+      align-content: center;
+
   }
    .my-navigation>div{
+     padding-top: 30px;
       display:inline-flex;  
       border-bottom: 6px solid rgba(30, 28, 31, 0.08); 
   }
@@ -46,19 +49,19 @@ a{text-decoration:none}
     position:absolute;
     background-color:rgba(30, 28, 31, 0.9); 
     display:inline-flex;
-    margin-top: 118px;
+    margin-top: 120px;
     width: 100%;
     padding-left:450px;
     padding-bottom: 50px; 
     display: none;
-    border-top:1px solid #000; 
+    
   }
   .my_ul>ul li{
     list-style: none;
+
     padding-left: 50px;
     font-size: 20px;
     margin:10px;
-
   }
   /* 导航条 鼠标悬停样式 */
   .my-navigation>.d1:hover{
@@ -66,7 +69,8 @@ a{text-decoration:none}
       border-bottom: 6px solid rgb(255, 230, 0)
   }
   .my-navigation>div a:hover{
-      color:rgba(255, 230, 0, 0.521)
+      color:rgba(255, 230, 0, 0.521);
+      text-decoration: none;
   }
   .my-navigation:hover +.my_ul{
     display: block;

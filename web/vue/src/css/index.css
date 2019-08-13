@@ -1,5 +1,8 @@
 div .row,div .col-7,body{margin: 0;padding: 0; }
 
+.my_index{
+     margin-top: 630px;
+}
 /* 轮播图 下部文字部分 */
 .mysff_ul{
      width: 100%;
@@ -345,6 +348,12 @@ div .dat{
 
 
 
+ .positioning{
+    position: fixed;
+    z-index: 99;
+    right:  0%;
+    top: 20%
+ }
 
 
 
