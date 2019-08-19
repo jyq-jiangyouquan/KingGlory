@@ -1,28 +1,31 @@
 div .row,div .col-7,body{margin: 0;padding: 0; }
 
 .my_index{
-     margin-top: 630px;
+     margin-top: 680px;
 }
+/* 轮播图 */
+img.w{width: 910px;
+height: 362px;}
+
+
 /* 轮播图 下部文字部分 */
 .mysff_ul{
      width: 100%;
      background-color:rgba(30, 28, 31, 0.9);
-     position:absolute; bottom:0;
- }
-.mysff_ul ul{  
-     display:inline-flex;
      list-style: none;
-     padding: 0;
-     margin: 0;
-}
-.mysff_ul>ul li{
-   padding:18px 30px 18px 40px; 
+     display:inline-flex;
+ }
+ .mysff_ul li>a{
+     color: rgb(153, 152, 152) !important;  
+ }
+.mysff_ul li{
+   padding:18px 40px 18px 25px; 
    font-size: 15px;  
    color: rgb(153, 152, 152) !important; 
 }
-/* 鼠标悬停状态 */
-.mysff_ul>ul li:hover {  background-color:rgba(196, 195, 195,0.2) ;}
-.mysff_ul>ul>li>a:hover{  color:rgba(255, 230, 0, 0.521)  }
+ /*鼠标悬停状态 */
+.mysff_ul>li:hover {  background-color:rgba(196, 195, 195,0.2) ;}
+.mysff_ul>li>a:hover{  color:rgba(255, 230, 0, 0.521)  }
 
 /*轮播图右侧 导航栏 导航 */
 .tab-content,.nav-pills{  background-color:rgba(30, 28, 31, 0.9); }
@@ -36,7 +39,7 @@ div .row,div .col-7,body{margin: 0;padding: 0; }
 /* 清除col-3 边距 */
 div .col-3{ margin: 0;padding: 0}
 /* 轮播图块 高度 */
-.tab-pane{ height: 350px ;}
+.tab-pane{ height:359px; border-left: 1px solid #000;}
     h5{
       color: rgba(255, 230, 0, 0.521) !important;
       background-color:rgba(30, 28, 31, 0.9);
@@ -59,23 +62,24 @@ div .col-3{ margin: 0;padding: 0}
    .download{
      background-color:rgba(30, 28, 31, 0.9); 
      border-left: 1px solid #000;
+     height: 420px;
    }
    /*轮播图 最右侧  下载游戏图片 */
    .download>a img{
         width: 100%;
      border: 1px solid #000;
    }
-   .download_img>a{
+   .download_img>a, .a1{
         display: inline-flex;
         padding:50px 10px 48px 40px;
         color: #ffffff;
         font-size: 20px;
    }
-   .download_img>a img{
+   .download_img>a img,.a1 img{
        width: 15%;
        height: 15%;
    }
-   .download_img>.a1 img{ margin-left: 40px; }
+   .a1{margin: 0px;padding-bottom: 10px;}
    .download_img>a:first-child{  border-bottom: 1px solid rgba(0, 0, 0, 0.39) !important; }
 
 /* 轮播图 下部一排图片 */
